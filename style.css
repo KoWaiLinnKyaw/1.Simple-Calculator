@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Catamaran', sans-serif;
+
+}
+body {
+    background-color: #fffde7;
+}
+
+.containter {
+    background-color: #212121;
+    width: 350px;
+    margin: 50px auto;
+    box-shadow: 0px 3px 20px black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.containter .header {
+    text-align: center;
+    color: white;
+    font-size: x-large;
+}
+.containter input, .result {
+    box-shadow: 0px 2px 5px rgb(0, 0, 0);
+    border-radius: 10px;
+}
+.resultArea .result {
+    width: 95%;
+    height: 150px;
+    display: block;
+    margin: 5px auto;
+    padding: 50px 10px 0px 10px;
+    font-size: 25px;
+    background-color: white;
+    text-align: right;
+    resize: none;
+    overflow: hidden;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.row .btn, .disabled {
+    width: 75px;
+    height: 65px;
+    margin: 3px 0;
+    font-size: 24px;
+    outline: none;
+}
+
+.disabled {
+    color : #d7d7d7;
+}
+
+.equalRow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.equalRow .btn {
+    width: 47%;
+    height: 65px;
+    margin: 3px 0;
+    font-size: 24px;
+    outline: none;
+    background-color: red;
+}
+
+.row .btn:active:not(.disabled), .equalRow .btn:active {
+    background-color: rgb(47, 46, 46);
+    color: white;
+}
+
+@media screen and (max-width: 360px) {
+    .containter {
+        width: 90%;
+    }
+    .resultArea .result {
+        width: 100%;
+    }
+    .equalRow .btn {
+        width: 50%;
+    }
+}
